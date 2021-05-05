@@ -1,0 +1,4 @@
+RUN {
+BACKUP INCREMENTAL LEVEL 1 DATABASE
+TAG 'Incremental_Backup_1_level';
+}

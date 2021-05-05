@@ -1,0 +1,5 @@
+run
+{
+BACKUP DATABASE
+TAG 'fullBackup';
+}

@@ -1,0 +1,7 @@
+shutdown immediate;
+startup mount;
+run{
+restore database;
+recover database;
+}
+alter pluggable database shop_of_hobbies open;

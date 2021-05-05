@@ -1,0 +1,10 @@
+--Views--
+
+CREATE VIEW GetProductsOrderedCustomer
+as
+    select o.CUSTOMER_ID, od.ORDER_ID, od.PRODUCT_ID, p.PRODUCT_NAME, p.PRICE
+FROM
+ORDERS o
+    INNER JOIN ORDER_DETAILS od ON o.ID_ORDER = od.ORDER_ID
+    INNER JOIN PRODUCTS p on od.PRODUCT_ID = p.ID_PRODUCT;
+
